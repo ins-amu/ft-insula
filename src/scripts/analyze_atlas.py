@@ -5,8 +5,8 @@ Created on Wed May 7 12:11 2025
 @author: Cristiana Pinheiro
 """
 import sys
-source_path = 'C:/Users/neuro/Desktop/Cristiana/'
-sys.path.append(source_path+'ft-insula/data/ENIGMA')
+source_path = 'C:/Users/neuro/Desktop/Cristiana/paper_insula/githubINS/'
+sys.path.append(source_path+'ft-insulaOS/ENIGMA')
 sys.path.insert(0,source_path+"ft-atlas/src/scripts")
 print('You need to change these paths during first use')
 import os
@@ -15,7 +15,7 @@ import matplotlib.gridspec as gridspec
 import mne
 import numpy as np
 import gzip
-from compute_atlasCP import main_CA
+#from compute_atlasCP import main_CA
 from py_tools.stats import get_binom_ci
 import re
 from enigmatoolbox.plotting import plot_subcortical
@@ -77,19 +77,19 @@ def main(filter_default, resolution_stim = 1, resolution_rec = np.nan,
     # merged = [stim, rec]
     # hemis_symmetrize = [True, "H"] True/False, H/V (Horizontal/Vertical)
     # time_window = ["max", 100] max_peak_delay , 100ms
-    trial = "INSULA/" + stim_parc_name + "/" + str(resolution_stim) + "/" + rec_parc_name + "/" + str(
+    trial = stim_parc_name + "/" + str(resolution_stim) + "/" + rec_parc_name + "/" + str(
         resolution_rec) + "/efferent_True"
     surro = surro_dict[time_window[1]]
     z = "5"
     min_value_impl = 2
-    se_dir = source_path+'ft-insula/data/real_data/se_v3'
+    se_dir = source_path+'ft-insulaOS/'
 
     # select parcel groups
     parcels_idxStim, ytickStim, parcels_idxRec, ytickRec = select_parcel_groups(merged,
                                                                                 stim_parc_name, rec_parc_name,
                                                                                 resolution_stim, resolution_rec)
 
-    output_directory_name = source_path+"ft-insula/data/results/" + trial + "/"
+    output_directory_name = source_path+"ft-insulaOS/results/" + trial + "/"
     print(output_directory_name)
     if os.path.isdir(output_directory_name):
         print("Available data will be used")
@@ -139,9 +139,9 @@ def analyze(se_dir, time_window, z, ntotal_min, min_value_impl, surro, resolutio
     # paths
     # mesh path
     if plot_parc_name == "MNI-JulichBrain-3.0":
-        meshdirname = source_path+"ft-insula/data/mne_data/MNE-sample-data/subjects/fsaverage"
+        meshdirname = source_path+"ft-insulaOS/mne_data/MNE-sample-data/subjects/fsaverage"
     elif plot_parc_name[:8] == "Lausanne":
-        meshdirname = source_path+"ft-insula/data/mne_data/MNE-sample-data/subjects/cvs_avg35_inMNI152"
+        meshdirname = source_path+"ft-insulaOS/mne_data/MNE-sample-data/subjects/cvs_avg35_inMNI152"
     else:
         print("meshdirname is not defined for this plot parcellation")
     # data path

@@ -5,8 +5,8 @@ Created on Wed May 14 10:20 2025
 @author: Cristiana Pinheiro
 """
 import sys
-source_path = 'C:/Users/neuro/Desktop/Cristiana/'
-sys.path.append(source_path+'ft-insula/data/ENIGMA')
+source_path = 'C:/Users/neuro/Desktop/Cristiana/paper_insula/githubINS/'
+sys.path.append(source_path+'ft-insulaOS/ENIGMA')
 print('You need to change these paths during first use')
 import os
 import matplotlib.pyplot as plt
@@ -31,13 +31,13 @@ def main(title="EffvsAff_", merged = [[True, False], [False, True]], hemis_symme
     # 'MNI-JulichBrain-3.0' 'MNI-insula' 'Lausanne2008-125' 'Lausanne2008-60' 'Lausanne2008-33'
     # title = LeftvsRight_     EffvsAff_   AllMatter_vs_Gray_
     # merged = stim, rec ; stim, rec
-    trial1 = "INSULA/" + stim_parc_name[0] + "/" + str(resolution_stim[0]) + "/" + rec_parc_name[0] + "/" + str(
+    trial1 = stim_parc_name[0] + "/" + str(resolution_stim[0]) + "/" + rec_parc_name[0] + "/" + str(
         resolution_rec[0]) + "/efferent_True"
-    trial2 = "INSULA/" + stim_parc_name[1] + "/" + str(resolution_stim[1]) + "/" + rec_parc_name[1] + "/" + str(
+    trial2 = stim_parc_name[1] + "/" + str(resolution_stim[1]) + "/" + rec_parc_name[1] + "/" + str(
         resolution_rec[1]) + "/efferent_False"
     surro = surro_dict[time_window[0][1]]
     z = "5"
-    se_dir = source_path+'/ft-insula/data/real_data/se_v3'
+    se_dir = source_path+'/ft-insulaOS/real_data/se_v3'
     # __________________________________________________________________________________________________________________
 
     # select parcels groups
@@ -52,9 +52,9 @@ def main(title="EffvsAff_", merged = [[True, False], [False, True]], hemis_symme
     parcels_idxRec = [parcels_idxRec0, parcels_idxRec1]
     ytickRec = [ytickRec0, ytickRec1]
 
-    output_directory_name1 = source_path + "ft-insula/data/results/" + trial1 + "/"
+    output_directory_name1 = source_path + "ft-insulaOS/results/" + trial1 + "/"
     print("output_directory_name1", output_directory_name1)
-    output_directory_name2 = source_path + "ft-insula/data/results/" + trial2 + "/"
+    output_directory_name2 = source_path + "ft-insulaOS/results/" + trial2 + "/"
     print("output_directory_name2", output_directory_name2)
     output_directory_name = [output_directory_name1, output_directory_name2]
     if os.path.isdir(output_directory_name1) & os.path.isdir(output_directory_name2):
@@ -76,9 +76,9 @@ def compare(se_dir, time_window, z, ntotal_min, surro, resolution_stim, resoluti
     # paths
     # mesh path
     if plot_parc_name == "MNI-JulichBrain-3.0":
-        meshdirname =  source_path + "/ft-insula/data/mne_data/MNE-sample-data/subjects/fsaverage"
+        meshdirname =  source_path + "/ft-insulaOS/mne_data/MNE-sample-data/subjects/fsaverage"
     elif plot_parc_name[:8] == "Lausanne":
-        meshdirname = source_path + "/ft-insula/data/mne_data/MNE-sample-data/subjects/cvs_avg35_inMNI152"
+        meshdirname = source_path + "/ft-insulaOS/mne_data/MNE-sample-data/subjects/cvs_avg35_inMNI152"
     else:
         print("meshdirname is not defined for this plot parcellation")
     # data path
