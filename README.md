@@ -54,7 +54,7 @@ The latest version of the data will be made available through **EBRAINS** (curre
 Each data folder follows a fixed hierarchical structure that encodes the analysis configuration.
 
 Example path:\
-\ft-insula\data\results\INSULA\
+\ft-insulaOS\results\
 \Lausanne2018-scale1\nan\MNI-insula\19\efferent_False\
 \max_peak_delay_100.0__zth5\
 \feature_ampl_zth5__N_with_value__min_value__50
