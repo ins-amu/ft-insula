@@ -1,0 +1,10 @@
+------------------------------
+SUBJECT sample
+DATE Fri Sep 16 01:39:47 EDT 2011
+USER gramfort
+HOST megmix
+PROCESSOR x86_64
+OS Linux
+Linux megmix 2.6.18-238.9.1.el5 #1 SMP Tue Apr 12 18:10:13 EDT 2011 x86_64 x86_64 x86_64 GNU/Linux
+$Id: recon-all,v 1.379.2.15 2011/05/13 19:26:06 krish Exp $
+/usr/local/freesurfer/stable5_1_0/bin/recon-all

@@ -1,0 +1,18 @@
+[
+    [
+        "erode_masks",
+        false
+    ],
+    [
+        "parcellation_scheme",
+        "Lausanne2008"
+    ],
+    [
+        "subject_id",
+        "cvs_avg35_inMNI152"
+    ],
+    [
+        "subjects_dir",
+        "/gin/data/database/03-preprocessed/Freesurfer"
+    ]
+]

@@ -1,0 +1,1 @@
+mri_convert /autofs/cluster/fusion/gramfort/work/data/bem_giorgio/subjects/sample/mri/rawavg.mgz /autofs/cluster/fusion/gramfort/work/data/bem_giorgio/subjects/sample/mri/orig.mgz --conform

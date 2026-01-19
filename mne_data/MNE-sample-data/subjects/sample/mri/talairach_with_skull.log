@@ -1,0 +1,16 @@
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+008: rms = 1145534.500
+009: rms = 1145534.375
+010: rms = 1145533.000
+011: rms = 1145532.125

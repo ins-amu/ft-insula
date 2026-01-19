@@ -1,0 +1,95 @@
+Log file for mkheadsurf
+Mon Nov 18 14:15:08 EST 2013
+/autofs/cluster/fusion/mluessi/MNE-sample-data-build/MNE-sample-data/subjects/sample/bem
+/usr/local/freesurfer/stable5/bin/mkheadsurf
+-s sample
+Filesystem           1K-blocks      Used Available Use% Mounted on
+172.27.68.26:/gpfs/nsdg04/fusion
+                     312557076480 282892385792 29664690688  91% /autofs/cluster/fusion
+--------------------------------
+Mon Nov 18 14:15:08 EST 2013
+/autofs/cluster/fusion/mluessi/MNE-sample-data-build/MNE-sample-data/subjects/sample/bem
+mri_seghead --invol /cluster/fusion/mluessi/MNE-sample-data-build/MNE-sample-data/subjects/sample/mri/T1.mgz --outvol /cluster/fusion/mluessi/MNE-sample-data-build/MNE-sample-data/subjects/sample/mri/seghead.mgz --fill 255 --thresh1 20 --thresh2 20 --nhitsmin 2
+--------------------------------
+input volume:  /cluster/fusion/mluessi/MNE-sample-data-build/MNE-sample-data/subjects/sample/mri/T1.mgz
+output volume: /cluster/fusion/mluessi/MNE-sample-data-build/MNE-sample-data/subjects/sample/mri/seghead.mgz
+threshold1:    20
+threshold2:    20
+nhitsmin:      2
+fill value:    255
+Loading input volume
+Filling Columns
+Filling Rows
+Filling Slices
+Merging and Inverting
+Growing
+Counting
+N Head Voxels = 4700892
+N Back Voxels = 12076324
+Avg. Back Intensity = 1.884820
+Max. Back Intensity = 222.000000
+Writing output
+Done
+--------------------------------
+Mon Nov 18 14:15:15 EST 2013
+/autofs/cluster/fusion/mluessi/MNE-sample-data-build/MNE-sample-data/subjects/sample/bem
+mri_tessellate /cluster/fusion/mluessi/MNE-sample-data-build/MNE-sample-data/subjects/sample/mri/seghead.mgz 255 /cluster/fusion/mluessi/MNE-sample-data-build/MNE-sample-data/subjects/sample/surf/lh.seghead
+--------------------------------
+$Id: mri_tessellate.c,v 1.36 2011/03/02 00:04:25 nicks Exp $
+  $Id: mrisurf.c,v 1.693.2.7 2013/05/12 22:28:01 nicks Exp $
+slice 30: 3409 vertices, 3536 faces
+slice 40: 13087 vertices, 13295 faces
+slice 50: 22501 vertices, 22763 faces
+slice 60: 36143 vertices, 36795 faces
+slice 70: 52331 vertices, 52933 faces
+slice 80: 64799 vertices, 65428 faces
+slice 90: 77313 vertices, 78024 faces
+slice 100: 90706 vertices, 91456 faces
+slice 110: 103411 vertices, 104169 faces
+slice 120: 115507 vertices, 116255 faces
+slice 130: 126950 vertices, 127723 faces
+slice 140: 137775 vertices, 138512 faces
+slice 150: 147525 vertices, 148288 faces
+slice 160: 157475 vertices, 158305 faces
+slice 170: 168025 vertices, 168920 faces
+slice 180: 179391 vertices, 180442 faces
+slice 190: 191655 vertices, 192881 faces
+slice 200: 204936 vertices, 206357 faces
+slice 210: 219545 vertices, 221330 faces
+slice 220: 237550 vertices, 239549 faces
+slice 230: 250648 vertices, 252877 faces
+slice 240: 262538 vertices, 265150 faces
+slice 250: 266940 vertices, 269415 faces
+using the conformed surface RAS to save vertex points...
+writing /cluster/fusion/mluessi/MNE-sample-data-build/MNE-sample-data/subjects/sample/surf/lh.seghead
+using vox2ras matrix:
+-1.000   0.000   0.000   128.000;
+ 0.000   0.000   1.000  -128.000;
+ 0.000  -1.000   0.000   128.000;
+ 0.000   0.000   0.000   1.000;
+--------------------------------
+Mon Nov 18 14:15:17 EST 2013
+/autofs/cluster/fusion/mluessi/MNE-sample-data-build/MNE-sample-data/subjects/sample/bem
+mris_smooth -n 10 -b area.seghead -c curv.seghead /cluster/fusion/mluessi/MNE-sample-data-build/MNE-sample-data/subjects/sample/surf/lh.seghead /cluster/fusion/mluessi/MNE-sample-data-build/MNE-sample-data/subjects/sample/surf/lh.seghead
+--------------------------------
+smoothing for 10 iterations
+smoothing surface tessellation for 10 iterations...
+smoothing complete - recomputing first and second fundamental forms...
+writing smoothed curvature to /cluster/fusion/mluessi/MNE-sample-data-build/MNE-sample-data/subjects/sample/surf/lh.curv.seghead
+writing smoothed area to /cluster/fusion/mluessi/MNE-sample-data-build/MNE-sample-data/subjects/sample/surf/lh.area.seghead
+--------------------------------
+Mon Nov 18 14:15:25 EST 2013
+/autofs/cluster/fusion/mluessi/MNE-sample-data-build/MNE-sample-data/subjects/sample/bem
+mris_inflate -n 10 -sulc sulc.seghead /cluster/fusion/mluessi/MNE-sample-data-build/MNE-sample-data/subjects/sample/surf/lh.seghead /cluster/fusion/mluessi/MNE-sample-data-build/MNE-sample-data/subjects/sample/surf/lh.seghead.inflated
+--------------------------------
+niterations = 10
+sulc name = sulc.seghead
+avg radius = 109.5 mm, total surface area = 171293 mm^2
+writing inflated surface to /cluster/fusion/mluessi/MNE-sample-data-build/MNE-sample-data/subjects/sample/surf/lh.seghead.inflated
+writing sulcal depths to /cluster/fusion/mluessi/MNE-sample-data-build/MNE-sample-data/subjects/sample/surf/lh.sulc.seghead
+step 000: RMS=0.121 (target=0.015)   step 005: RMS=0.091 (target=0.015)   step 010: RMS=0.082 (target=0.015)   step 015: RMS=0.076 (target=0.015)   step 020: RMS=0.072 (target=0.015)   step 025: RMS=0.066 (target=0.015)   step 030: RMS=0.064 (target=0.015)   step 035: RMS=0.060 (target=0.015)   step 040: RMS=0.057 (target=0.015)   step 045: RMS=0.055 (target=0.015)   step 050: RMS=0.054 (target=0.015)   step 055: RMS=0.055 (target=0.015)   step 060: RMS=0.055 (target=0.015)   
+inflation complete.
+inflation took 0.9 minutes
+Started at: Mon Nov 18 14:15:08 EST 2013
+Ended   at: Mon Nov 18 14:16:18 EST 2013
+mkheadsurf done

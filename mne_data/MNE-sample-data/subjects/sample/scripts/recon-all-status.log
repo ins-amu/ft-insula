@@ -1,0 +1,67 @@
+status file for recon-all
+Thu Sep 15 14:10:29 EDT 2011
+#@# MotionCor Thu Sep 15 14:10:39 EDT 2011
+#@# Talairach Thu Sep 15 14:10:56 EDT 2011
+#@# Talairach Failure Detection Thu Sep 15 14:11:47 EDT 2011
+#@# Nu Intensity Correction Thu Sep 15 14:11:47 EDT 2011
+#@# Intensity Normalization Thu Sep 15 14:16:26 EDT 2011
+#@# Skull Stripping Thu Sep 15 14:18:36 EDT 2011
+#@# EM Registration Thu Sep 15 14:32:05 EDT 2011
+#@# CA Normalize Thu Sep 15 14:54:30 EDT 2011
+#@# CA Reg Thu Sep 15 14:56:19 EDT 2011
+#@# CA Reg Inv Thu Sep 15 18:17:28 EDT 2011
+#@# Remove Neck Thu Sep 15 18:18:49 EDT 2011
+#@# SkullLTA Thu Sep 15 18:20:10 EDT 2011
+#@# SubCort Seg Thu Sep 15 18:41:01 EDT 2011
+#@# Merge ASeg Thu Sep 15 18:57:47 EDT 2011
+#@# Intensity Normalization2 Thu Sep 15 18:57:47 EDT 2011
+#@# Mask BFS Thu Sep 15 19:01:22 EDT 2011
+#@# WM Segmentation Thu Sep 15 19:01:25 EDT 2011
+#@# Fill Thu Sep 15 19:03:56 EDT 2011
+#@# Tessellate lh Thu Sep 15 19:04:45 EDT 2011
+#@# Smooth1 lh Thu Sep 15 19:04:54 EDT 2011
+#@# Inflation1 lh Thu Sep 15 19:04:59 EDT 2011
+#@# QSphere lh Thu Sep 15 19:05:38 EDT 2011
+#@# Fix Topology lh Thu Sep 15 19:10:43 EDT 2011
+#@# Make White Surf lh Thu Sep 15 19:39:07 EDT 2011
+#@# Smooth2 lh Thu Sep 15 19:45:07 EDT 2011
+#@# Inflation2 lh Thu Sep 15 19:45:13 EDT 2011
+#@# Curvature Stats lh Thu Sep 15 19:47:25 EDT 2011
+#@# Sphere lh Thu Sep 15 19:47:33 EDT 2011
+#@# Surf Reg lh Thu Sep 15 20:42:23 EDT 2011
+#@# Jacobian white lh Thu Sep 15 21:13:47 EDT 2011
+#@# AvgCurv lh Thu Sep 15 21:13:50 EDT 2011
+#@# Cortical Parc lh Thu Sep 15 21:13:53 EDT 2011
+#@# Make Pial Surf lh Thu Sep 15 21:14:40 EDT 2011
+#@# Surf Volume lh Thu Sep 15 21:26:18 EDT 2011
+#@# Parcellation Stats lh Thu Sep 15 21:26:19 EDT 2011
+#@# Cortical Parc 2 lh Thu Sep 15 21:26:37 EDT 2011
+#@# Parcellation Stats 2 lh Thu Sep 15 21:27:31 EDT 2011
+#@# Tessellate rh Thu Sep 15 21:27:50 EDT 2011
+#@# Smooth1 rh Thu Sep 15 21:28:00 EDT 2011
+#@# Inflation1 rh Thu Sep 15 21:28:05 EDT 2011
+#@# QSphere rh Thu Sep 15 21:28:44 EDT 2011
+#@# Fix Topology rh Thu Sep 15 21:33:36 EDT 2011
+#@# Make White Surf rh Thu Sep 15 21:58:48 EDT 2011
+#@# Smooth2 rh Thu Sep 15 22:04:50 EDT 2011
+#@# Inflation2 rh Thu Sep 15 22:04:56 EDT 2011
+#@# Curvature Stats rh Thu Sep 15 22:07:10 EDT 2011
+#@# Sphere rh Thu Sep 15 22:07:18 EDT 2011
+#@# Surf Reg rh Thu Sep 15 23:55:45 EDT 2011
+#@# Jacobian white rh Fri Sep 16 00:40:13 EDT 2011
+#@# AvgCurv rh Fri Sep 16 00:40:16 EDT 2011
+#@# Cortical Parc rh Fri Sep 16 00:40:19 EDT 2011
+#@# Make Pial Surf rh Fri Sep 16 00:41:07 EDT 2011
+#@# Surf Volume rh Fri Sep 16 00:53:07 EDT 2011
+#@# Parcellation Stats rh Fri Sep 16 00:53:07 EDT 2011
+#@# Cortical Parc 2 rh Fri Sep 16 00:53:26 EDT 2011
+#@# Parcellation Stats 2 rh Fri Sep 16 00:54:21 EDT 2011
+#@# Cortical ribbon mask Fri Sep 16 00:54:41 EDT 2011
+#@# ASeg Stats Fri Sep 16 01:08:16 EDT 2011
+#@# AParc-to-ASeg Fri Sep 16 01:15:21 EDT 2011
+#@# WMParc Fri Sep 16 01:18:44 EDT 2011
+#@# BA Labels lh Fri Sep 16 01:34:07 EDT 2011
+#@# BA Labels rh Fri Sep 16 01:36:39 EDT 2011
+#@# Ex-vivo Entorhinal Cortex Label lh Fri Sep 16 01:39:13 EDT 2011
+#@# Ex-vivo Entorhinal Cortex Label rh Fri Sep 16 01:39:30 EDT 2011
+recon-all -s sample finished without error at Fri Sep 16 01:39:47 EDT 2011

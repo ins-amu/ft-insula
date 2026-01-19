@@ -1,0 +1,1 @@
+mri_cc -aseg aseg.auto_noCCseg.mgz -o aseg.auto.mgz -lta /autofs/cluster/fusion/gramfort/work/data/bem_giorgio/subjects/sample/mri/transforms/cc_up.lta sample
