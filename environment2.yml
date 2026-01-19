@@ -1,0 +1,40 @@
+name: ft-atlas_env4
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+
+  # Core scientific stack
+  - numpy=1.26
+  - scipy=1.14
+  - pandas=2.2
+
+  # Neuroimaging
+  - mne=1.9
+  - nilearn=0.10
+  - nibabel=5.3
+  - dipy=1.9
+
+  # Visualization
+  - matplotlib=3.9
+  - seaborn=0.13
+  - pyvista=0.44
+  - mayavi=4.8
+
+  # Statistics & ML
+  - scikit-learn=1.5
+  - statsmodels=0.14
+
+  # I/O and utilities
+  - h5py=3.12
+  - pymatreader=1.0
+  - pyyaml=6.0
+  - tqdm=4.66
+  - joblib=1.4
+  - loguru=0.7
+
+  # Interactive
+  - jupyterlab=4.4
+  - ipykernel=6.29
+
+prefix: C:\Users\neuro\anaconda3\envs\ft-atlas_env4

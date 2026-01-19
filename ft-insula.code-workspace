@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"name": "py-tools",
+			"path": "../py-tools"
+		},
+		{
+			"name": "ft-stimulation_essentials",
+			"path": "../ft-stimulation_essentials"
+		},
+		{
+			"name": "ft-atlas",
+			"path": "../ft-atlas"
+		},
+		{
+			"name": "ft-insula",
+			"path": "."
+		}
+	]
+}

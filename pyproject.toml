@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ft-insula"
+authors = [
+    {name = "Maciej Jedynak", email = "maciej.jedynak@protonmail.com"},
+]
+description = "DESC"
+readme = "README.md"
+license = {text = "CC BY-NC-SA"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+]
+dynamic = ["version"]
+
+#[project.urls]
+#Homepage = "https://github.com/..."
+#Issues = "https://github.com/..."
