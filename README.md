@@ -18,7 +18,7 @@ The latest version of the data will be made available through **EBRAINS** (curre
 ### Folders
 
 - **results/**  
-  Contains all generated data and figures. See *Results Folder Structure* below.  
+  Contains all generated data and figures. Please unzip the folder first to access its contents and be ready for use. See *Results Folder Structure* below. 
 
 - **parcellation_definitions/**  
   Labels and definitions for each supported parcellation scheme.
