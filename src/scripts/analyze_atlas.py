@@ -78,7 +78,7 @@ def main(filter_default, resolution_stim = 1, resolution_rec = np.nan,
     # hemis_symmetrize = [True, "H"] True/False, H/V (Horizontal/Vertical)
     # time_window = ["max", 100] max_peak_delay , 100ms
     trial = stim_parc_name + "/" + str(resolution_stim) + "/" + rec_parc_name + "/" + str(
-        resolution_rec) + "/efferent_True"
+        resolution_rec) + ""
     surro = surro_dict[time_window[1]]
     z = "5"
     min_value_impl = 2
