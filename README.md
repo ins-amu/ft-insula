@@ -55,7 +55,7 @@ Each data folder follows a fixed hierarchical structure that encodes the analysi
 
 Example path:\
 \ft-insulaOS\results\
-\Lausanne2018-scale1\nan\MNI-insula\19\efferent_False\
+\Lausanne2018-scale1\nan\MNI-insula\19\
 \max_peak_delay_100.0__zth5\
 \feature_ampl_zth5__N_with_value__min_value__50
 
@@ -73,17 +73,12 @@ The folder hierarchy is defined as follows (from top to bottom):
 
 4. **Recording parcellation resolution**  
    Number of parcels included in the recording parcellation.  
-   A value of `nan` indicates the raw resolution.
+   A value of `nan` indicates the raw resolution. 
 
-5. **Connectivity direction**  
-   Indicates whether connectivity is analyzed as:
-   - `efferent_True`  (insula stimulation → recording whole brain)
-   - `efferent_False` (stimulation whole brain → recording insula)
-
-6. **Temporal constraint and z-threshold**  
+5. **Temporal constraint and z-threshold**  
    Folder encoding the maximum peak delay (in ms) and z-score threshold used to detect responses.
 
-7. **Minimum response requirement**  
+6. **Minimum response requirement**  
 Folder encoding the feature type, z-threshold, and minimum required number of responses.
 
 ---
@@ -121,7 +116,7 @@ Each configuration contains **parcel-by-parcel matrices** for multiple features.
 
 ### Available Stimulation × Recording Parcellation Combinations
 
-The repository includes multiple combinations of stimulation and recording parcellation schemes, supporting both **efferent** and **afferent** connectivity analyses.
+The repository includes multiple combinations of stimulation and recording parcellation schemes, supporting both **efferent** (insula stimulation → recording whole brain) and **afferent** (stimulation whole brain → recording insula) connectivity analyses.
 
 Efferent Connectivity *(Insula stimulation → whole-brain recording)*:
 
