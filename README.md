@@ -73,7 +73,7 @@ The folder hierarchy is defined as follows (from top to bottom):
 
 4. **Recording parcellation resolution**  
    Number of parcels included in the recording parcellation.  
-   A value of `nan` indicates the raw resolution. 
+   A value of `nan` indicates the raw resolution.
 
 5. **Temporal constraint and z-threshold**  
    Folder encoding the maximum peak delay (in ms) and z-score threshold used to detect responses.
@@ -261,5 +261,3 @@ Performs statistical comparisons between probabilistic connectivity of two atlas
 If you use this code or data, cite as follows:
 
 Pinheiro et al., *Effective connectivity of the human insula measured by cortico-cortical evoked potentials*
-
-
